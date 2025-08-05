@@ -1,0 +1,79 @@
+/* Basic Page Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1d2b64, #f8cdda);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Calculator Box */
+.calculator {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  width: 320px;
+}
+
+/* Display Screen */
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 26px;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  background-color: #f0f8ff;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Buttons Styling */
+button {
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Colors */
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:nth-child(4n) { /* Operators */
+  background-color: #ff9a76;
+  color: #fff;
+}
+
+button:nth-child(1) { /* Clear button */
+  background-color: #ff4d4d;
+  color: white;
+}
+
+button:nth-child(17) { /* Equals button */
+  background-color: #00cc99;
+  color: white;
+}
+
+button:not(:nth-child(4n)):not(:nth-child(1)):not(:nth-child(17)) {
+  background-color: #dcdcdc;
+}
