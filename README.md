@@ -1,2 +1,2 @@
 # Calculator-JS
-simple colorful calculator built with HTML, CSS, and JavaScript
+simple colorful calculator built with HTML, CSS, and JavaScript.
